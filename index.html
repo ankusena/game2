@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sketch and Guess</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>Sketch and Guess</h1>
+        <p>Draw a word, and the game will guess!</p>
+    </header>
+
+    <main>
+        <section id="language-selection">
+            <label for="language">Choose a language:</label>
+            <select id="language">
+                <option value="spanish">Spanish</option>
+                <!-- Add other languages here -->
+            </select>
+        </section>
+
+        <section id="level-selection">
+            <label for="level">Choose a level:</label>
+            <select id="level">
+                <option value="1">Level 1</option>
+                <!-- Add other levels here -->
+            </select>
+        </section>
+
+        <button id="start-game">Start Game</button>
+
+        <section id="sketch-area" style="display:none;">
+            <canvas id="canvas" width="400" height="400"></canvas>
+            <button id="submit-sketch">Submit Sketch</button>
+        </section>
+
+        <p id="guess-result"></p>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 Sketch and Guess</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
